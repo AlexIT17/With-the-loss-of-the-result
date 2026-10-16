@@ -1,4 +1,5 @@
 import java.util.concurrent.atomic.AtomicInteger;
+
 //Класс, управляющий потоками
 class InterferenceExample {
     private static final int HUNDRED_MILLION = 100_000_000;
@@ -18,6 +19,6 @@ class InterferenceExample {
         System.out.println("Expected: " + HUNDRED_MILLION);
         System.out.println("Result: " + thread1.getI()); // Теперь результат сходится
 
-
+//        System.out.println("Result: " + InterferenceThread.getI()); //synchronized
     }
 }
